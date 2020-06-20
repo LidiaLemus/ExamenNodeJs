@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Frontend</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="/">Cracion de Api</a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscador" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+  <br><br>
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Canciones</h1>
+                    <form action="" method="POST">
+                        <div class="row">
+                            <div class="col">
+                                <label>Nombre</label>
+                                <input type="text" id="nombre" class="form-control" placeholder="Ej.Fuiste tu">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>Año</label>
+                                <input type="text" id="anio" class="form-control" placeholder="Ej.2020">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>Genero</label>
+                                <input type="text" id="genero" class="form-control" placeholder="Ej.Romantica">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>Duracion</label>
+                            <input type="text" id="duracion" class="form-control" placeholder="Ej.2 minutos"> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>Artista</label>
+                            <input type="text" id="artista" class="form-control" placeholder="Ej. Miley Cyrus">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>Posicion</label>
+                            <input type="text" id="posicion" class="form-control" placeholder="Ej. 7">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>Pais</label>
+                                <input type="text" id="pais" class="form-control" placeholder="Ej. Guatemala">
+                            </div>
+                        </div>
+                       
+                        <br>
+                        <button class="btn btn-outline-success" onclick="agregar(event)">Agregar una cancion</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">  
+            <table class="table table-hover table-striped table-bordered">
+                <caption>Lista de Canciones</caption>
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Genero</th>
+                        <th scope="col">Duracion</th>
+                        <th scope="col">Artista</th>
+                        <th scope="col">Posicion</th>
+                        <th scope="col">Pais</th>
+                        <th scope="col">estado</th>
+                        <th scope="col">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+            
+                </tbody>
+                
+            </table>
+            
+            </div>
+    </div>
+</div>
+
+    <!--jQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <!--App -->
+    <script src="app.js"></script>
+
+</body>
+</html>
