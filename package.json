@@ -16,7 +16,7 @@
     "express-handlebars": "^4.0.4",
     "mongoose": "^5.9.18",
     "morgan": "^1.10.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
